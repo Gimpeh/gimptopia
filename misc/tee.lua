@@ -5,6 +5,8 @@
   but it doesn't include any append mode...
   so maybe ill fix it later.
 
+       by Aerolivier
+
   Usage: tee [-f] [FILES]
   
   Copies data from stdin to stdout and listed FILES.
