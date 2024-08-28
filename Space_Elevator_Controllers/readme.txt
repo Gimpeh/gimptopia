@@ -16,5 +16,4 @@ However, consider stacking additional inventory_upgrades, as there are way more 
 
 This script is brand new and as of this writing, never even been parsed in an opencomputers environment. Use at your own risk! It could fail completely.
 
-It will be extensively tested and properly documented in the future..
-But I cant even right now.
+It will be extensively tested and properly documented in the near future.
