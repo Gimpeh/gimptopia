@@ -1,3 +1,6 @@
+I AM NOT AFFILIATED WITH LOGIT.IO IN ANY WAY SHAPE OR FORM!
+Other than being a current or former customer.
+
 This file needs to be edited (quite heavy most likely) by you, the user.
 
 However it provides a clear format for interfacing with the metrics logging site logit.io 
