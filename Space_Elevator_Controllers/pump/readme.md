@@ -38,4 +38,27 @@ You now have this
 * **Screen (Tier 1)**
 * **Redstone Card (Tier 2)**
 * **Memory Module (Tier 3.5)** *Just the one is fine*
-* **Internet Card** ***OR*** **Disk Drive** *We won't be covering the disk drive's required installation process, So probably better to stick with the Internet Card*
+* **Internet Card**
+* **Disk Drive**
+* **ME Upgrade** ***THE BLUE ONE!!! - #3 - item code 10640:2***
+* **Inventory Controller Upgrade**
+* **2 x Inventory Upgrade**
+* **Hard Disk Drive (Tier 1)**
+* *Optionally - Linked Card* **If you do this, put the partner card somewhere safe, where you wont lose it. And rename it in an anvil.**
+   - Only useful if you're planning on derping with any future systems. This robit is sufficient as a set and forget system as is.
+
+Do what you want in the rest of the slots.. Including nothing. If you don't know what you want but think you want something... 
+
+* Upgrade Container (Tier 3)
+* Upgrade Container (Tier 2)
+
+
+### Finishing Touches
+**DOUBLE CHECK THAT YOU HAVE ALL COMPONENTS!** - ***If you have picked the wrong ME Upgrade, I will waste hours of your time before helping you fix it..***
+
+**All _NECESSARY_ Components are Included in the image below.
+
+![image](https://github.com/user-attachments/assets/833cdef7-285e-4740-8160-7fb01c3c4b26)
+ 
+
+Click The Play button in the Electronics Assembler and Let It Craft!
