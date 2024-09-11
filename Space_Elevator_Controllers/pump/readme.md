@@ -63,6 +63,10 @@ Do what you want in the rest of the slots.. Including nothing. If you don't know
 
 Click The Play button in the Electronics Assembler and Let It Craft! *This still takes a little while, so we'll come back for it, don't worry*
 
+## Workspace
+
+### Required Items
+
 Now you need to obtain the following;
 * **charger** <-- Of the OpenComputers variety
 * **OpenOs (Operating System)**
@@ -71,12 +75,24 @@ Now you need to obtain the following;
 * **2x Red Alloy Wire**
 * **lever** *or equivelant*
 
+### Required Placements
+*recommended if we're being completely honest*
+
 The only thing that is not shown in the pictures below is the cover. The cover goes on the top side of the block.
 
-It can be placed in other locations.. but only if you know what you are doing.
+The cover's state should be **Enable with Redstone**
+
+It can technically be placed in other locations.. but only if you know ***EXACTLY*** you are doing.
+
+**If you decide to go with a different Workspace Configuration, I am not helping you troubleshoot.** 
+**I will need a Screenshot of the environment to actually be able to Troubleshoot most Issues**
+
+--------------
 
 > [!NOTE]
 > The robot only outputs a signal strength of 1. This means that the color of the red alloy wire is **NOT** going to change while 'on' 
+
+--------------
 
 ![image](https://github.com/user-attachments/assets/8f2e22dd-7c9e-422c-aec2-ff2dfdcc73a3)
 ![image](https://github.com/user-attachments/assets/88ccde17-6a0d-4baa-b100-8f63d04864d6)
