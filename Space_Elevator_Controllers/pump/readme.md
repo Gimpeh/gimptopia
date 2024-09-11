@@ -54,11 +54,31 @@ Do what you want in the rest of the slots.. Including nothing. If you don't know
 
 
 ### Finishing Touches
-**DOUBLE CHECK THAT YOU HAVE ALL COMPONENTS!** - ***If you have picked the wrong ME Upgrade, I will waste hours of your time before helping you fix it..***
+**DOUBLE CHECK THAT YOU HAVE ALL COMPONENTS!** - ***If you have picked the wrong ME Upgrade, I will waste hours of your time***
 
-**All _NECESSARY_ Components are Included in the image below.
+**All _NECESSARY_ Components** are Included in the image below.
 
 ![image](https://github.com/user-attachments/assets/833cdef7-285e-4740-8160-7fb01c3c4b26)
  
 
-Click The Play button in the Electronics Assembler and Let It Craft!
+Click The Play button in the Electronics Assembler and Let It Craft! *This still takes a little while, so we'll come back for it, don't worry*
+
+Now you need to obtain the following;
+* **charger** <-- Of the OpenComputers variety
+* **OpenOs (Operating System)**
+* **ME Wireless Access Point**
+* **Machine Controller Cover**
+* **2x Red Alloy Wire**
+* **lever** *or equivelant*
+
+The only thing that is not shown in the pictures below is the cover. The cover goes on the top side of the block.
+
+It can be placed in other locations.. but only if you know what you are doing.
+
+> [!NOTE]
+> The robot only outputs a signal strength of 1. This means that the color of the red alloy wire is **NOT** going to change while 'on' 
+
+![image](https://github.com/user-attachments/assets/8f2e22dd-7c9e-422c-aec2-ff2dfdcc73a3)
+![image](https://github.com/user-attachments/assets/88ccde17-6a0d-4baa-b100-8f63d04864d6)
+
+
