@@ -162,4 +162,19 @@ See how the robot is in the output? That means its linked.
 6. Repeat for each Fluid you desire.
 
 ## Install and Run
+
+### Install
+
 ```
+wget https://raw.githubusercontent.com/Gimpeh/gimptopia/main/Space_Elevator_Controllers/pump/hacatu_pump_puncher.lua && install
+```
+### Run
+
+It can now be run with the command
+```
+hacatu_pump_puncher
+```
+
+# Trouble Shooting
+
+COMING SOON!
