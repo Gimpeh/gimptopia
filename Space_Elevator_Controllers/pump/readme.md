@@ -177,6 +177,10 @@ It can now be run with the command
 hacatu_pump_puncher
 ```
 
+# Important Things
+
+The storage for the level maintained liquids should be sized appropriately
+
 # Trouble Shooting
 
 COMING SOON!
