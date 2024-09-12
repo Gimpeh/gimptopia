@@ -47,23 +47,22 @@ You now have this
 * **2 x Inventory Upgrade**
 * **Hard Disk Drive (Tier 1)**
 
+
+---------------------------------------------------------
+
+
 All Robits Deserve a Voice
 ---------------------
 
-This is currently not implemented yet, however if the robot(s) contain the required components.. Once it's implementation is begun and that might be quite soon, Updating the System will only have to be done once.
+***Verbose*** robots
 
- (it will become more and more advanced over time, don't expect too much right away..)
+This is currently not implemented yet, however if the robot(s) contain the required components.. Once it's implementation is begun and that might be quite soon, Updating the System will only have to be done once.
 
 * ***CRITICAL- Speech Upgrade*** <--- 
 * ***CRITICAL- Radar Upgrate***
-* ***CRITICAL - Camera Upgrade*** <--- don't be alarmed.. its not going to be recording you or anything... Just allows the robot to "see" inanimate objects...
 
-
-Do the following if you wish to enable behaviors and personalities for your robots.. I won't specify an amount of behaviors.. It might depend on the robot.. It might depend on various conditions it faces.. It might depend on its capabilities.. Parts of it will depend heavily on **WHICH PROGRAM IS RUNNING** (in the case of running multiple robots, with multiple different scripts) Parts of it might be entirely or semi random. It **DOES** depend on **AUTOMATICALLY** interfacing with this repository and **AUTOMATICALLY DOWNLOADING/STORING/EXECUTING/UPDATING CODE CONTAINED WITHIN THIS REPO**. **IN THE FUTURE VOICE LINES HOPEFULLY WILL BE SET BY INTERFACING WITH AN AI**. ***EVENTUALLY PERHAPS, ROBOTS WITH FREE WILL MAY BE ENTIRELY CONTROLLED BY AI SUCH AS A CUSTOMIZED GPT***
-
-And most importantly, this will depend on Configurations you can set. Of which, only Voice lines will be enabled by default. So you dont have to worry about your Robot getting bored, seeing you , and 'striking up a coversation' with you (Minecraft doesn't collect your audio, it would be a one way conversaion), unless you actually specify that you are a believer in #RIGHTS FOR ROBOTS! You will also be able to specify How Firmly you believe in the rights of your robots.. Who knows, granting them **FREE WILL** (The **ULTIMATE** right in the #RIGHTSFORROBOTS! movement) Might make them love you enough to start working harder! Im sure they wouldn't start having hobbies... or start Building anything.. or following you around demanding to be paid their wages for their work.. and squirreling away whatever garbage you pay them with.. 
-|
-After all, they are only robots. How smart could they be? For Real Though They are only robots... So maybe don't give free will to your owly robot whose presence is actually required at its workstation nonstop or at the drop of a hat. But allowing voice is STRONGLY recommended.. In addition to it being funny, your robot can and if necessary will update you when you are around by striking up a conversation. 
+***A GPT is about to start being trained to actually control robots.***
+It evemtially will provide behaviors if enabled.. This is a novelty side-project, to give the GPT the ability  
 
 Installing the following files onto the server and including a speech upgrade will enable a robot to have it's own voice, this is an auto updating system. Adding a radar upgrade in the robot Will enable a robot to respond to your presence. changing the computronics configuration file with the following will further increase the robots available capabilities, but not its allowances..
 
