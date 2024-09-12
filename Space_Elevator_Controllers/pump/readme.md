@@ -50,7 +50,14 @@ You now have this
 All Robits Deserve a Voice
 ---------------------
 
-This is currently not implemented yet, however if the robot(s) contain the required components.. Once it is implemented and that might be quite soon (it will become more and more advanced over time, don't expect too much right away..)
+This is currently not implemented yet, however if the robot(s) contain the required components.. Once it's implementation is begun and that might be quite soon, Updating the System will only have to be done once.
+
+ (it will become more and more advanced over time, don't expect too much right away..)
+
+* ***CRITICAL- Speech Upgrade*** <--- 
+* ***CRITICAL- Radar Upgrate***
+* ***CRITICAL - Camera Upgrade*** <--- don't be alarmed.. its not going to be recording you or anything... Just allows the robot to "see" inanimate objects...
+
 
 Do the following if you wish to enable behaviors and personalities for your robots.. I won't specify an amount of behaviors.. It might depend on the robot.. It might depend on various conditions it faces.. It might depend on its capabilities.. Parts of it will depend heavily on **WHICH PROGRAM IS RUNNING** (in the case of running multiple robots, with multiple different scripts) Parts of it might be entirely or semi random. It **DOES** depend on **AUTOMATICALLY** interfacing with this repository and **AUTOMATICALLY DOWNLOADING/STORING/EXECUTING/UPDATING CODE CONTAINED WITHIN THIS REPO**. **IN THE FUTURE VOICE LINES MIGHT BE SET BY INTERFACING WITH AN AI**. 
 
@@ -70,9 +77,6 @@ B:onlyOutputDistance=false
 
 ------------------------------------
 
-* ***CRITICAL- Speech Upgrade*** <--- 
-  ***CRITICAL- Radar Upgrate***
-  ***Critical - Camera Upgrade*** <--- don't be alarmed.. its not going to be recording you or anything... Just allows the robot to "see" inanimate objects...
   
 
 I'm sure it will behave
