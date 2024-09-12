@@ -62,7 +62,7 @@ This is currently not implemented yet, however if the robot(s) contain the requi
 * ***CRITICAL- Radar Upgrate***
 
 ***A GPT is about to start being trained to actually control robots.***
-It evemtially will provide behaviors if enabled.. This is a novelty side-project, to give the GPT the ability  
+It evemtially will provide behaviors if enabled.. This is a novelty side-project, to give the GPT 'personality' and make it not just a boring voice controlled slave.. If it is half as good as I want it to be by the time I need it, it deserves to have some character as well.  
 
 Installing the following files onto the server and including a speech upgrade will enable a robot to have it's own voice, this is an auto updating system. Adding a radar upgrade in the robot Will enable a robot to respond to your presence. changing the computronics configuration file with the following will further increase the robots available capabilities, but not its allowances..
 
