@@ -192,10 +192,25 @@ wget https://raw.githubusercontent.com/Gimpeh/gimptopia/main/Space_Elevator_Cont
 ```
 ### Run
 
-It can now be run with the command
+It can now be run with the following 2 commands
+
+-----------------------------------
+
+Allow the Robot its Unaleinable Rights 
+
 ```
 hacatu_pump_puncher
 ```
+
+----------------------------------
+
+Make it cry because it because it is clearly the lowest class of being
+
+```
+hacatu_pump_puncher stfu
+```
+
+--------------------------------
 
 # Important Things
 
