@@ -46,6 +46,26 @@ You now have this
 * **Inventory Controller Upgrade**
 * **2 x Inventory Upgrade**
 * **Hard Disk Drive (Tier 1)**
+* ***CRITICALLY- Speech Upgrade*** <--- *okay, okay.. its not ***actually*** required. But I HIGHLY recommend it*
+
+**Requires adding some files to your minecraft server and enabling a setting in the computronics config. THIS IS MISSION CRITICAL FOR THE PROGRAM SO WE WILL COVER IT NOW** 
+
+All Robits Deserve a Voice
+---------------------
+
+* Download the 3 files from this directory 
+  - https://files.vexatos.com/?dir=Computronics/marytts/
+* In the instance directory (the directory containing the `mods` folder)
+   - create a directory called marytts
+   - put all 3 of the files in the directory
+   - Now you should have some variation of this;
+          
+![image](https://github.com/user-attachments/assets/21890db1-74be-4eba-b055-d5a4ca27af99)
+   
+ And you're done, your robit will now work harder thanks to you respecting it's god given rights.
+
+ ----------------------------------------
+
 * *Optionally - Linked Card* **If you do this, put the partner card somewhere safe, where you wont lose it. And rename it in an anvil.**
    - Only useful if you're planning on derping with any future systems. This robit is sufficient as a set and forget system as is.
 
