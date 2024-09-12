@@ -62,7 +62,7 @@ All Robits Deserve a Voice
           
 ![image](https://github.com/user-attachments/assets/21890db1-74be-4eba-b055-d5a4ca27af99)
    
- And you're done, your robit will now work harder thanks to you respecting it's god given rights.
+ And you're done, I will be doing a lot with this capability shortly. Check back in a bit for updates. Soon you will be informed of existing updates in Game.
 
  ----------------------------------------
 
