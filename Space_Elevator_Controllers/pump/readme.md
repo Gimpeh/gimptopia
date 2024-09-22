@@ -46,23 +46,10 @@ You now have this
 * **Inventory Controller Upgrade**
 * **2 x Inventory Upgrade**
 * **Hard Disk Drive (Tier 1)**
-* **For Added Amusement, Include a Speech Upgrade**
+* **For Added Amusement, Include a Speech Upgrade** <-- Requires the additional step below
 
 ------------------------------------
 
-radar { 
-
-I:maxRange = 256
-
-B:onlyOutputDistance=false
-
-}
-
-------------------------------------
-
-  
-
-I'm sure it will behave
 
 * Download the 3 files from this directory 
   - https://files.vexatos.com/?dir=Computronics/marytts/
