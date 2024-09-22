@@ -171,9 +171,11 @@ end
 local problem = false
 local success, err = pcall(check_me_upgrade)
 if not success then
-  print("SOMETHING HAS GONE TERRIBLY WRONG!!!")
-  print("aAN UNnnCOntrOLLABLE URrrGE IS STrIkING ME")
-  print("II i IIi II PUINCH PUMP THE PUMPMP")
+  voice.say("SOMETHING HAS GONE TERRIBLY WRONG!!!")
+  os.sleep(8)
+  voice.say("aAN UNnnCOntrOLLABLE URrrGE IS STrIkING ME")
+  os.sleep(8)
+  voice.say("II i IIi II PUINCH PUMP THE PUMPMP")
   if robot.up() then
     robot.turnRight()
     robot.turnLeft()
