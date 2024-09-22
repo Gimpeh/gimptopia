@@ -175,8 +175,8 @@ See how the robot is in the output? That means its linked.
 **THE FOLLOWING NEEDS TO BE EXACT**
 4. Rename the Memory Card in an Anvil.
    - This is a case sensitive exact match to what shows up when you highlight over the relevant gas in NEI
-   - <Fluid's Exact Label (Display Name)>: <amount to keep in stock>
-   - Nitrogen Gas: 1000000000      <-- example. Note that it is Nitrogen Gas not nitrogen gas and not nitrogen
+   - `<Fluid's Exact Label (Display Name)>: <amount to keep in stock>`
+   - `Nitrogen Gas: 1000000000`      <-- example. Note that it is Nitrogen Gas not nitrogen gas and not nitrogen
    - the colon comes directly after the gas name, a space, and then the number.
 5. Store the memory card in the robot.
 6. Repeat for each Fluid you desire.
