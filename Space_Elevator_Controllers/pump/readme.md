@@ -46,7 +46,7 @@ You now have this
 * **Inventory Controller Upgrade**
 * **2 x Inventory Upgrade**
 * **Hard Disk Drive (Tier 1)**
-* **For Added Amusement, Include a Speech Upgrade** <-- Requires the additional step below
+* **For Added Amusement, Include a Speech Upgrade** <-- *Requires the additional step below. AND NOT CURRENTLY WORKING*
 
 ------------------------------------
 
