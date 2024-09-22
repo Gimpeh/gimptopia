@@ -74,7 +74,7 @@ Do what you want in the rest of the slots.. Including nothing. If you don't know
 
 
 ### Finishing Touches
-**DOUBLE CHECK THAT YOU HAVE ALL COMPONENTS!** - ***If you have picked the wrong ME Upgrade, I will waste hours of your time***
+**DOUBLE CHECK THAT YOU HAVE ALL COMPONENTS!**
 
 **All _NECESSARY_ Components** are Included in the image below.
 
