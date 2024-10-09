@@ -11,7 +11,7 @@ local rs = component.redstone
 --- Returning information about resources we are to stock
 
 local function get_maintained_resource_information(memory_card)
-    local stack = inv.getStackInInternalSlot(memory_card)
+    local stack = memory_card
     local label = stack.label
     local j, _ = string.find(label, ":", 1, true)
     local name = string.sub(label, 1, j - 1)
