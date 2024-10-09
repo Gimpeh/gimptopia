@@ -94,7 +94,7 @@ local function main()
         print("Line 74: Processing card number " .. card_num)
         if card_info.good then
             print("Line 76: Card number " .. card_num .. " is good, setting redstone output")
-            rs.setOutput({ [0] = 15, 15, 15, 15, 15, 15})
+            rs.setOutput({[0] = 15, 15, 15, 15, 15, 15})
         else
             alls_good = false
             local resource_in_stock = me.getItemsInNetwork({label = card_info.desired_resource_label})
