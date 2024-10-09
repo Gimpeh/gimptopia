@@ -26,8 +26,8 @@ local tbl = {
             [2] = "Uranium 233 Dust",
             [3] = "Uranium 235 Dust",
             [4] = "Plutonium-238 Dust",
-            [5] = "Plutonium 239 Dust",
-            [6] = "Plutonium 241 Dust"
+            [5] = "Plutonium 239 Dust"
+            --[6] = "Plutonium 241 Dust"
     },
     [4] = {
             type = "solid",
@@ -169,7 +169,8 @@ local tbl2 = {
         amount = 3000
     }--[[,
     ["Plutonium 241 Dust"] = {
-        card = 
+        card = 3,
+        amount = 100000
     }]]
 }
 
