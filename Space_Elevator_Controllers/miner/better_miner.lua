@@ -1,7 +1,7 @@
 local component = require("component")
 local robot = require("robot")
 
-local me = component.me_controller
+local me = component.upgrade_me
 local inv = component.inventory_controller
 local rs = component.redstone
 
@@ -140,7 +140,7 @@ end
 -----------------------------------------
 --- The Loop
 
-memory_cards = read_memory_cards()
+read_memory_cards()
 
 while true do
     main()
