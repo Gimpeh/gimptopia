@@ -177,14 +177,34 @@ local function findCard(name, derp)
             inv.equip()
             robot.useUp()
             inv.equip()
-            if component.upgrade_me.getItemsInNetwork({label = derp})[1] == nil then
-                os.sleep(100)
+
+            local derping = component.upgrade_me.getItemsInNetwork({label = derp})
+            if derping and derping[1] then
+                while component.upgrade_me.getItemsInNetwork({label = derp})[1].size < 100000000 do
+                    print(name .. " : " .. tostring(component.upgrade_me.getItemsInNetwork({label = derp})[1].size))
+                    os.sleep(2)
+                end
+                return true
+            else
+                derping = component.upgrade_me.getFluidsInNetwork()
+                for i = 1, #derping do
+                    if derping[i].label == derp then
+                        while true do
+                            os.sleep(2)
+                            derping = component.upgrade_me.getFluidsInNetwork()
+                            for j = 1, #derping do
+                                if derping[j].label == derp then
+                                    if derping[j].amount >= 100000000 then
+                                        return true
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                end
+                return false
             end
-            while component.upgrade_me.getItemsInNetwork({label = derp})[1].size < 100000000 do
-                print(name .. " : " .. tostring(component.upgrade_me.getItemsInNetwork({label = derp})[1].size))
-                os.sleep(2)
-            end
-            return true
         end
     end
     return false
