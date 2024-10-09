@@ -44,6 +44,7 @@ local function read_memory_cards()
                     if data.label == card.label then
                         print("Line 33: Found matching datastick in slot " .. j)
                         memory_card_info.inventory_slot_datastick = j
+                        break
                     end
                 end
             end
