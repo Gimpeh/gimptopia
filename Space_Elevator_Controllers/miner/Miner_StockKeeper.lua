@@ -117,7 +117,7 @@ local function set_new_miner_config(selected_card)
     end 
     for i = 1, robot.inventorySize() do
         local memory_card = inv.getStackInInternalSlot(i)
-        if memory_card and memory_card.label == selected_card.memory_card_label and memory_card.name == "appliedenergistics2:item.ToolMemoryCard" then
+        if memory_card and memory_card.label == selected_card.memory_card_label and memory_card.name == "gregtech:gt.metaitem.01" then
             right_click_on_miner(i)
             break
         end

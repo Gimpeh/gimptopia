@@ -167,7 +167,10 @@ local tbl2 = {
     ["Black Body Naquadria Supersolid"] = {
         card = 20,
         amount = 3000
-    }
+    }--[[,
+    ["Plutonium 241 Dust"] = {
+        card = 
+    }]]
 }
 
 local function findCard(name, derp)
@@ -180,7 +183,7 @@ local function findCard(name, derp)
 
             local derping = component.upgrade_me.getItemsInNetwork({label = derp})
             if derping and derping[1] then
-                while component.upgrade_me.getItemsInNetwork({label = derp})[1].size < 100000000 do
+                while component.upgrade_me.getItemsInNetwork({label = derp})[1].size < 100000 do
                     print(name .. " : " .. tostring(component.upgrade_me.getItemsInNetwork({label = derp})[1].size))
                     os.sleep(2)
                 end
@@ -194,7 +197,7 @@ local function findCard(name, derp)
                             derping = component.upgrade_me.getFluidsInNetwork()
                             for j = 1, #derping do
                                 if derping[j].label == derp then
-                                    if derping[j].amount >= 100000000 then
+                                    if derping[j].amount >= 100000 then
                                         return true
                                     end
                                     break
@@ -219,7 +222,7 @@ local function main()
                 print("table type is solid")
                 local item = component.upgrade_me.getItemsInNetwork({label = j})
                 print("checking against: " .. item[1].label)
-                if item[1].size < 100000000 then
+                if item[1].size < 100000 then
                     print("Not Enough In Stock : ", tostring(j))
                     --find the card named i and sleep for 100 seconds or wtvr
                     local suc, err = pcall(findCard, k, j)
@@ -237,7 +240,7 @@ local function main()
                 for e = 1, #item do
                     if item[e].label == j then
                         print("checking " .. item[e].label .. " against " .. j) 
-                        if item[e].amount < 100000000 then
+                        if item[e].amount < 100000 then
                             print("Not Enough In Stock : ", tostring(j))
                             --find the card named i and sleep for 100 seconds or wtvr
                             local suc, err = pcall(findCard, k, j)
