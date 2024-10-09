@@ -167,11 +167,11 @@ local tbl2 = {
     ["Black Body Naquadria Supersolid"] = {
         card = 20,
         amount = 3000
-    }--[[,
+    },
     ["Plutonium 241 Dust"] = {
         card = 3,
         amount = 100000
-    }]]
+    }
 }
 
 local function findCard(name, derp)
