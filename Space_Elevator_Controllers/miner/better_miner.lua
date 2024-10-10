@@ -1,5 +1,6 @@
 local component = require("component")
 local robot = require("robot")
+local sides = require("sides")
 
 local me = component.upgrade_me
 local inv = component.inventory_controller
@@ -60,6 +61,24 @@ local function main()
     print("Line 45: Starting main()")
     local alls_good = true
 
+    local function change_miner_setup(card_info)
+        rs.setOutput({[0] = 0, 0, 0, 0, 0 ,0})
+        while rs.getInput(sides.right) > 10 do
+            os.sleep(5)
+        end
+        robot.select(card_info.inventory_slot_techTech)
+        inv.equip()
+        robot.use()
+        inv.equip()
+        robot.down()
+        robot.select(card_info.inventory_slot_datastick)
+        inv.equip()
+        robot.use()
+        inv.equip()
+        robot.up()
+        rs.setOutput({[0] = 15, 15, 15, 15, 15, 15})
+    end
+
     local function recheck_cards()
         print("Line 49: Rechecking memory cards")
         for index, card_info in ipairs(memory_cards) do
@@ -98,7 +117,7 @@ local function main()
         print("Line 74: Processing card with desired resource label: " .. card_info.desired_resource_label)
         if card_info.good then
             print("Line 76: Card is good, setting redstone output")
-            rs.setOutput({[0] = 15, 15, 15, 15, 15, 15})
+            rs.setOutput({[0] = 0, 0, 0, 0, 0 ,0})
         else
             alls_good = false
             local resource_in_stock = me.getItemsInNetwork({label = card_info.desired_resource_label})
@@ -107,17 +126,7 @@ local function main()
                     print("Line 83: Not enough resources for " .. card_info.desired_resource_label)
                     if recheck_slot(card_info.label, card_info.inventory_slot_techTech) and recheck_slot(card_info.label, card_info.inventory_slot_datastick) then
                         print("Line 85: Rechecking slots successful, using robot to process")
-                        robot.select(card_info.inventory_slot_techTech)
-                        inv.equip()
-                        robot.use()
-                        inv.equip()
-                        robot.down()
-                        robot.select(card_info.inventory_slot_datastick)
-                        inv.equip()
-                        robot.use()
-                        inv.equip()
-                        robot.up()
-                        rs.setOutput({[0] = 0, 0, 0, 0, 0 ,0})
+                        change_miner_setup(card_info)
                         while (me.getItemsInNetwork({label = card_info.desired_resource_label})[1].size or 0) < card_info.desired_amount do
                             print("Line 95: Waiting for resources to reach desired amount for " .. card_info.desired_resource_label)
                             os.sleep(20)
@@ -131,24 +140,14 @@ local function main()
                 end
             else
                 print("Line 104: Resource not found in network, using robot to process " .. card_info.desired_resource_label)
-                robot.select(card_info.inventory_slot_techTech)
-                inv.equip()
-                robot.use()
-                inv.equip()
-                robot.down()
-                robot.select(card_info.inventory_slot_datastick)
-                inv.equip()
-                robot.use()
-                inv.equip()
-                robot.up()
-                rs.setOutput({[0] = 0, 0, 0, 0, 0 ,0})
+                change_miner_setup(card_info)
                 os.sleep(200)
             end
         end
     end
     if alls_good then
         print("Line 118: All cards are good, setting redstone output and starting recheck loop")
-        rs.setOutput({[0] = 15, 15, 15, 15, 15, 15})
+        rs.setOutput({[0] = 0, 0, 0, 0, 0 ,0})
         read_memory_cards()
         recheck_cards()
         if alls_good then
