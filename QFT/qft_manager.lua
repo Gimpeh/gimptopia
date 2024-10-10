@@ -224,7 +224,7 @@ local function main()
             if tbl[k].type == "solid" then
                 print("table type is solid")
                 local item = component.upgrade_me.getItemsInNetwork({label = j})
-                print("checking against: " .. item[1].label)
+                print("checking against: " .. tostring(item[1].label))
                 if item[1].size < amount then
                     print("Not Enough In Stock : ", tostring(j))
                     --find the card named i and sleep for 100 seconds or wtvr
