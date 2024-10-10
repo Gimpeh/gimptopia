@@ -228,6 +228,10 @@ local function main()
                     print("checking against: " .. tostring(item[1].label))
                 else
                     print("no item found")
+                    item = {}
+                    item[1] = {}
+                    item[1].size = 0
+                    item[1].label = j
                 end
                 if item[1].size < amount then
                     print("Not Enough In Stock : ", tostring(j))
