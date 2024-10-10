@@ -62,18 +62,22 @@ local function main()
 
     local function recheck_cards()
         print("Line 49: Rechecking memory cards")
-        for card_num, card_info in ipairs(memory_cards) do
-            print("Line 51: Rechecking card number " .. card_num)
+        for index, card_info in ipairs(memory_cards) do
+            print("Line 51: Rechecking card number " .. index)
             local resource_in_stock = me.getItemsInNetwork({label = card_info.desired_resource_label})
             if resource_in_stock and resource_in_stock[1] and resource_in_stock[1].size then
                 if resource_in_stock[1].size < card_info.desired_amount then
-                    print("Line 55: Not enough resources for card number " .. card_num)
-                    memory_cards[card_num].good = false
+                    print("Line 55: Not enough resources for card number " .. index)
+                    memory_cards[index].good = false
                     alls_good = false
                 else
-                    print("Line 58: Enough resources for card number " .. card_num)
-                    memory_cards[card_num].good = true
+                    print("Line 58: Enough resources for card number " .. index)
+                    memory_cards[index].good = true
                 end
+            else
+                print("Line 61: Resource not found in network for card number " .. index)
+                memory_cards[index].good = false
+                alls_good = false
             end
         end
     end
@@ -90,17 +94,17 @@ local function main()
         end
     end
 
-    for card_num, card_info in ipairs(memory_cards) do
-        print("Line 74: Processing card number " .. card_num)
+    for index, card_info in ipairs(memory_cards) do
+        print("Line 74: Processing card number " .. index)
         if card_info.good then
-            print("Line 76: Card number " .. card_num .. " is good, setting redstone output")
+            print("Line 76: Card number " .. index .. " is good, setting redstone output")
             rs.setOutput({[0] = 15, 15, 15, 15, 15, 15})
         else
             alls_good = false
             local resource_in_stock = me.getItemsInNetwork({label = card_info.desired_resource_label})
             if resource_in_stock and resource_in_stock[1] and resource_in_stock[1].size then
                 if resource_in_stock[1].size < card_info.desired_amount then
-                    print("Line 83: Not enough resources for card number " .. card_num)
+                    print("Line 83: Not enough resources for card number " .. index)
                     if recheck_slot(card_info.label, card_info.inventory_slot_techTech) and recheck_slot(card_info.label, card_info.inventory_slot_datastick) then
                         print("Line 85: Rechecking slots successful, using robot to process")
                         robot.select(card_info.inventory_slot_techTech)
@@ -122,8 +126,8 @@ local function main()
                         print("Line 98: Rechecking slots failed")
                     end
                 else
-                    print("Line 101: Resources are sufficient for card number " .. card_num)
-                    memory_cards[card_num].good = true
+                    print("Line 101: Resources are sufficient for card number " .. index)
+                    memory_cards[index].good = true
                 end
             else
                 print("Line 104: Resource not found in network, using robot to process")
@@ -169,6 +173,12 @@ read_memory_cards()
 
 while true do
     print("Line 137: Starting main loop")
-    main()
+    local suc, err = pcall(main)
+    if not suc then
+        print("Line 140: Error in main loop: " .. err)
+        component.modem.open(500)
+        component.modem.broadcast(1001, "space miner")
+        break
+    end
 end
 
