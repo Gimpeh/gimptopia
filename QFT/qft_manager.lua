@@ -200,11 +200,11 @@ local function wait_till_done(item_name, item_type, amount2)
         elseif item_type == "fluid" then
             local item_flag = false
             item = component.upgrade_me.getFluidsInNetwork()
-            for e = 1, #item do
-                if item[e].label == item_name then
+            for d = 1, #item do
+                if item[d].label == item_name then
                     item_flag = true
-                    print("Waiting For: " .. tostring(item[e].label))
-                    if item[e].amount >= amount3 then
+                    print("Waiting For: " .. tostring(item[d].label))
+                    if item[d].amount >= amount3 then
                         print("Item Stocked", item_name)
                         return
                     end
