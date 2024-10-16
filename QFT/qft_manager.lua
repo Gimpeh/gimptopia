@@ -88,18 +88,18 @@ local tbl = {
             },
             fluid = {
                 [1] = "Raw Growth Catalyst Medium",
-                [2] = "Growth Catalyst Medium"
+                --[2] = "Growth Catalyst Medium"
             }
     },
     [13] = {
             type = "solid",
-            [1] = "Inert Naquadah Dust",
+            --[1] = "Inert Naquadah Dust",
             [2] = "Adamantium Dust",
             [3] = "Gallium Dust"
     },
     [14] = {
             type = "solid",
-            [1] = "Inert Enriched Naquadah Dust",
+            --[1] = "Inert Enriched Naquadah Dust",
             [2] = "Trinium Dust"
     },
     [15] = {
@@ -108,8 +108,8 @@ local tbl = {
                 [1] = "Biocells"
             },
             fluid = {
-                [1] = "Mutated Living Solder",
-                [2] = "Sterilized Bio Catalyst Medium",
+                --[1] = "Mutated Living Solder",
+                --[2] = "Sterilized Bio Catalyst Medium",
                 [3] = "Raw Bio Catalyst Medium"
             }
     },
@@ -136,8 +136,8 @@ local tbl = {
     },
     [18] = {
             type = "fluid",
-            [1] = "Xenoxene",
-            [2] = "Molten Radox Polymer",
+            --[1] = "Xenoxene",
+            --[2] = "Molten Radox Polymer",
             [3] = "Heavy Radox",
     },
     [19] = {
@@ -148,7 +148,7 @@ local tbl = {
     },
     [20] = {
             type = "solid",
-            [1] = "Inert Naquadria Dust",
+            --[1] = "Inert Naquadria Dust",
             [2] = "Barium Dust"
     },
     [21] = {
@@ -164,18 +164,50 @@ local tbl = {
 }
 
 local tbl2 = {
-    ["Unknown Particle"] = {
-        card = 11,
-        amount = 10000
-    },
-    ["Black Body Naquadria Supersolid"] = {
-        card = 20,
-        amount = 3000
-    },
     ["Plutonium 241 Dust"] = {
         card = 3,
         amount = 100000
     }
+    ["Unknown Particle"] = {
+        card = 11,
+        amount = 10000
+    },
+    ["Growth Catalyst Medium"] = {
+        card = 12,
+        amount = 500000000 --need for circuits
+    }
+    ["Inert Naquadah Dust"] = {
+        card = 13,
+        amount = 200 -- don't need more, stocking molten
+    }
+    ["Inert Enriched Naquadah Dust"] = {
+        card = 14,
+        amount = 200 -- don't need more, stocking molten
+    }
+    ["Mutated Living Solder"] = {
+        card = 15,
+        amount = 500000000 --need for everything
+    }
+    ["Sterilized Bio Catalyst Medium"] = {
+        card = 15,
+        amount = 500000000 --need for circuits
+    }
+    ["Xenoxene"] = {
+        card = 18,
+        amount = 500000000 --need for everything
+    }
+    ["Molten Radox Polymer"] = {
+        card = 18,
+        amount = 500000000 --need for everything
+    }
+    ["Inert Naquadria Dust"] = {
+        card = 20,
+        amount = 200 -- don't need more, stocking molten
+    }
+    ["Black Body Naquadria Supersolid"] = {
+        card = 20,
+        amount = 3000 
+    },
 }
 
 local function wait_till_done(item_name, item_type, amount2)
