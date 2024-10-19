@@ -194,11 +194,11 @@ local tbl2 = {
     },
     ["Xenoxene"] = {
         card = 18,
-        amount = 500000000 --need for everything
+        amount = 450000000 --need for everything
     },
     ["Molten Radox Polymer"] = {
         card = 18,
-        amount = 500000000 --need for everything
+        amount = 150000000 --need for everything
     },
     ["Inert Naquadria Dust"] = {
         card = 20,
