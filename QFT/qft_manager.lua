@@ -172,10 +172,6 @@ local tbl2 = {
         card = 11,
         amount = 10000
     },
-    ["Growth Catalyst Medium"] = {
-        card = 12,
-        amount = 500000000 --need for circuits
-    },
     ["Inert Naquadah Dust"] = {
         card = 13,
         amount = 200 -- don't need more, stocking molten
@@ -183,6 +179,20 @@ local tbl2 = {
     ["Inert Enriched Naquadah Dust"] = {
         card = 14,
         amount = 200 -- don't need more, stocking molten
+    },
+    ["Inert Naquadria Dust"] = {
+        card = 20,
+        amount = 200 -- don't need more, stocking molten
+    },
+    ["Black Body Naquadria Supersolid"] = {
+        card = 20,
+        amount = 3000 
+    }
+}
+local tbl3 = {
+    ["Growth Catalyst Medium"] = {
+        card = 12,
+        amount = 500000000 --need for circuits
     },
     ["Mutated Living Solder"] = {
         card = 15,
@@ -199,14 +209,6 @@ local tbl2 = {
     ["Molten Radox Polymer"] = {
         card = 18,
         amount = 150000000 --need for everything
-    },
-    ["Inert Naquadria Dust"] = {
-        card = 20,
-        amount = 200 -- don't need more, stocking molten
-    },
-    ["Black Body Naquadria Supersolid"] = {
-        card = 20,
-        amount = 3000 
     }
 }
 
