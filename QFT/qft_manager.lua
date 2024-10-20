@@ -94,13 +94,13 @@ local tbl = {
     [13] = {
             type = "solid",
             --[1] = "Inert Naquadah Dust",
-            [2] = "Adamantium Dust",
-            [3] = "Gallium Dust"
+            [1] = "Adamantium Dust",
+            [2] = "Gallium Dust"
     },
     [14] = {
             type = "solid",
             --[1] = "Inert Enriched Naquadah Dust",
-            [2] = "Trinium Dust"
+            [1] = "Trinium Dust"
     },
     [15] = {
             type = "mixed",
@@ -110,7 +110,7 @@ local tbl = {
             fluid = {
                 --[1] = "Mutated Living Solder",
                 --[2] = "Sterilized Bio Catalyst Medium",
-                [3] = "Raw Bio Catalyst Medium"
+                [1] = "Raw Bio Catalyst Medium"
             }
     },
     [16] = {
@@ -138,7 +138,7 @@ local tbl = {
             type = "fluid",
             --[1] = "Xenoxene",
             --[2] = "Molten Radox Polymer",
-            [3] = "Heavy Radox",
+            [1] = "Heavy Radox",
     },
     [19] = {
             type = "fluid",
@@ -149,7 +149,7 @@ local tbl = {
     [20] = {
             type = "solid",
             --[1] = "Inert Naquadria Dust",
-            [2] = "Barium Dust"
+            [1] = "Barium Dust"
     },
     [21] = {
             type = "mixed",
