@@ -440,6 +440,19 @@ local function main()
             print("No card found")
         end
     end
+    for k, v in pairs(tbl3) do
+        local fluids = component.upgrade_me.getFluidsInNetwork()
+        for index, fluid in ipairs(fluids) do
+            if fluid.label == k then
+                if fluid.amount < v.amount then
+                    print("Not Enough " .. k .. " In Stock")
+                    local suc, err = pcall(findCard, v.card, k, "fluid", v.amount)
+                    if not suc then print("Error in findCard : " .. err) end
+                end
+                break
+            end
+        end
+    end
     print("one full loop dunzo!")
 end
 
