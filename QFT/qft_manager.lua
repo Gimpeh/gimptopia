@@ -185,9 +185,9 @@ local function wait_till_done(item_name, item_type, amount2)
         if item_type == "solid" then
             item = component.upgrade_me.getItemsInNetwork({label = item_name})
             if item and item[1] then
-                print("Waiting For: " .. tostring(item[1].label))
+                print("188 - Waiting For: " .. tostring(item[1].label))
             else
-                print("Item not in storage")
+                print("190 - Item not in storage")
                 item = {}
                 item[1] = {}
                 item[1].size = 0
@@ -203,15 +203,15 @@ local function wait_till_done(item_name, item_type, amount2)
             for d = 1, #item do
                 if item[d].label == item_name then
                     item_flag = true
-                    print("Waiting For: " .. tostring(item[d].label))
+                    print("206 - Waiting For: " .. tostring(item[d].label))
                     if item[d].amount >= amount3 then
-                        print("Item Stocked", item_name)
+                        print("208 - Item Stocked", item_name)
                         return
                     end
                 end
             end
             if not item_flag then
-                print("212 - Item not in storage")
+                print("214 - Item not in storage")
             end
         end
         os.sleep(10)
@@ -219,6 +219,7 @@ local function wait_till_done(item_name, item_type, amount2)
 end
 
 local function findCard(card_name, item_name, item_type, amount2)
+    print("finding card for " .. item_name)
     for e = 1, robot.inventorySize() do
         if inv.getStackInInternalSlot(e) and inv.getStackInInternalSlot(e).label and inv.getStackInInternalSlot(e).label == tostring(card_name) then
             robot.select(e)
@@ -260,125 +261,125 @@ end
 
 local function main()
     for k, v in ipairs(tbl) do
-        print("at point " .. tostring(k) .. " in table")
+        print("264 - at point " .. tostring(k) .. " in table")
         for _, j in ipairs(tbl[k]) do
-            print("checking material " .. j)
+            print("266 - checking material " .. j)
             if tbl[k].type == "solid" then
-                print("table type is solid")
+                print("268 - table type is solid")
                 local item = component.upgrade_me.getItemsInNetwork({label = j})
                 if item and item[1] then
-                    print("checking against: " .. tostring(item[1].label))
+                    print("271 - checking against: " .. tostring(item[1].label))
                 else
-                    print("no item found")
+                    print("273 - no item found")
                     item = {}
                     item[1] = {}
                     item[1].size = 0
                     item[1].label = j
                 end
                 if item[1].size < amount then
-                    print("Not Enough In Stock : ", tostring(j))
+                    print("280 - Not Enough In Stock : ", tostring(j))
                     --find the card named i and sleep for 100 seconds or wtvr
                     local suc, err = pcall(findCard, k, j, tbl[k].type)
                     if suc and err then
-                        print("farmed a material : ", tostring(j))
+                        print("284 - farmed a material : ", tostring(j))
                     elseif suc and not err then
-                        print("No card found")
+                        print("286 - No card found")
                     elseif not suc then
-                        print("Error in findCard : " .. err)
+                        print("288 - Error in findCard : " .. err)
                     end
                 end
             elseif tbl[k].type == "fluid" then
-                print("table type is fluid")
+                print("292 - table type is fluid")
                 local item_flag = false
                 local item = component.upgrade_me.getFluidsInNetwork()
                 for e = 1, #item do
                     if item[e].label == j then
                         item_flag = true
-                        print("checking " .. item[e].label .. " against " .. j) 
+                        print("298 - checking " .. item[e].label .. " against " .. j) 
                         if item[e].amount < amount then
-                            print("Not Enough In Stock : ", tostring(j))
+                            print("300 - Not Enough In Stock : ", tostring(j))
                             --find the card named i and sleep for 100 seconds or wtvr
                             local suc, err = pcall(findCard, k, j, tbl[k].type)
                             if suc and err then
-                                print("farmed a material : ", tostring(j))
+                                print("304 - farmed a material : ", tostring(j))
                             elseif suc and not err then
-                                print("No card found")
+                                print("306 - No card found")
                             elseif not suc then
-                                print("Error in findCard : " .. err)
+                                print("308 - Error in findCard : " .. err)
                             end
                         end
                     end
                 end
                 if not item_flag then
-                    print("No item found")
+                    print("314 - No item found")
                     local suc, err = pcall(findCard, k, j, tbl[k].type)
                     if suc and err then
-                        print("farmed a material : ", tostring(j))
+                        print("317 - farmed a material : ", tostring(j))
                     elseif suc and not err then
-                        print("No card found")
+                        print("319 - No card found")
                     elseif not suc then
-                        print("Error in findCard : " .. err)
+                        print("321 - Error in findCard : " .. err)
                     end
                 end
             elseif tbl[k].type == "mixed" then
-                print("table type is mixed")
+                print("325 - table type is mixed")
                 for _, i in ipairs(tbl[k].solid) do
-                    print("checking solid material " .. i)
+                    print("327 - checking solid material " .. i)
                     local item = component.upgrade_me.getItemsInNetwork({label = i})
                     if item and item[1] then
-                        print("checking " .. item[1].label .. " against " .. i)
+                        print("330 - checking " .. item[1].label .. " against " .. i)
                     else
-                        print("no item found")
+                        print("332 - no item found")
                         item = {}
                         item[1] = {}
                         item[1].size = 0
                         item[1].label = i
                     end
                     if item[1].size < amount then
-                        print("Not Enough In Stock : ", tostring(i))
+                        print("339 -Not Enough In Stock : ", tostring(i))
                         --find the card named i and sleep for 100 seconds or wtvr
                         local suc, err = pcall(findCard, k, j, "solid")
                         if suc and err then
-                            print("farmed a material : ", tostring(j))
+                            print("343 - farmed a material : ", tostring(j))
                         elseif suc and not err then
-                            print("No card found")
+                            print("345 - No card found")
                         elseif not suc then
-                            print("Error in findCard : " .. err)
+                            print("347 - Error in findCard : " .. err)
                         end
                     end
                 end
                 for _, i in ipairs(tbl[k].fluid) do
                     local item_flag = false
-                    print("checking fluid material " .. i)
+                    print("353 - checking fluid material " .. i)
                     local item = component.upgrade_me.getFluidsInNetwork()
                     for e = 1, #item do
-                        print("checking " .. item[e].label .. " against " .. i)
+                        print("356 - checking " .. item[e].label .. " against " .. i)
                         if item[e].label == i then
                             item_flag = true
-                            print("found a match")
+                            print("359 - found a match")
                             if item[e].amount < amount then
-                                print("Not Enough In Stock : ", tostring(i))
+                                print("361 - Not Enough In Stock : ", tostring(i))
                                 --find the card named i and sleep for 100 seconds or wtvr
                                 local suc, err = pcall(findCard, k, j, "fluid")
                                 if suc and err then
-                                    print("farmed a material : ", tostring(j))
+                                    print("365 - farmed a material : ", tostring(j))
                                 elseif suc and not err then
-                                    print("No card found")
+                                    print("367 - No card found")
                                 elseif not suc then
-                                    print("Error in findCard : " .. err)
+                                    print("369 - Error in findCard : " .. err)
                                 end
                             end
                         end
                     end
                     if not item_flag then
-                        print("No item found")
+                        print("375 - No item found")
                         local suc, err = pcall(findCard, k, j, "fluid")
                         if suc and err then
-                            print("farmed a material : ", tostring(j))
+                            print("378 - farmed a material : ", tostring(j))
                         elseif suc and not err then
-                            print("No card found")
+                            print("380 - No card found")
                         elseif not suc then
-                            print("Error in findCard : " .. err)
+                            print("382 - Error in findCard : " .. err)
                         end
                     end
                 end
@@ -386,33 +387,33 @@ local function main()
         end
     end
     for k, v in pairs(tbl2) do
-        print("checking for " .. k)
+        print("390 - checking for " .. k)
         local item = component.upgrade_me.getItemsInNetwork({label = k})
         if item and item[1] then
-            print("checking against: " .. tostring(item[1].label))
+            print("393 - checking against: " .. tostring(item[1].label))
         else
-            print("no item found")
+            print("395 - no item found")
             item = {}
             item[1] = {}
             item[1].size = 0
             item[1].label = k
         end
         if item[1].size < v.amount then
-            print("Not Enough In Stock : ", tostring(k))
+            print("402 - Not Enough In Stock : ", tostring(k))
             --find the card named i and sleep for 100 seconds or wtvr
             local suc, err = pcall(findCard, v.card, k, "solid", v.amount)
-            print("farmed a material : ", tostring(k))
+            print("405 - farmed a material : ", tostring(k))
         else
-            print("No card found")
+            print("407 - No card found")
         end
     end
-    print("one full loop dunzo!")
+    print("410 - one full loop dunzo!")
 end
 
 while true do
     local suc, err = pcall(main)
     if not suc then
-        print("DERPING ERROR IN MAIN!!! - " .. err)
+        print("416 - DERPING ERROR IN MAIN!!! - " .. err)
     end
     os.sleep(1)
 end

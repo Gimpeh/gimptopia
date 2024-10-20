@@ -127,9 +127,20 @@ local function main()
                     if recheck_slot(card_info.label, card_info.inventory_slot_techTech) and recheck_slot(card_info.label, card_info.inventory_slot_datastick) then
                         print("Line 85: Rechecking slots successful, using robot to process")
                         change_miner_setup(card_info)
+                        --[[
                         while (me.getItemsInNetwork({label = card_info.desired_resource_label})[1].size or 0) < card_info.desired_amount do
                             print("Line 95: Waiting for resources to reach desired amount for " .. card_info.desired_resource_label)
                             os.sleep(20)
+                        end]]
+                        while true do
+                            local item = me.getItemsInNetwork({label = card_info.desired_resource_label})
+                            if item and item[1] and item[1].size and item[1].size < card_info.desired_amount then
+                                print("Line 95: Waiting for resources to reach desired amount for " .. card_info.desired_resource_label)
+                                os.sleep(20)
+                            elseif item and item[1] and item[1].size and item[1].size >= card_info.desired_amount then
+                                print("Line 96: Resources are sufficient for " .. card_info.desired_resource_label)
+                                break
+                            end
                         end
                     else
                         print("Line 98: Rechecking slots failed for " .. card_info.desired_resource_label)
