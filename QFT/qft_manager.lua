@@ -454,6 +454,7 @@ local function main()
         end
     end
     print("one full loop dunzo!")
+    os.sleep(300)
 end
 
 while true do
