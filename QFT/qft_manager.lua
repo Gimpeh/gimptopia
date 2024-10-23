@@ -3,7 +3,7 @@ local robot = require("robot")
 local inv = component.inventory_controller
 local sides = require("sides")
 
-local amount = 1000000
+local amount = 100000000
 
 local tbl = {
     [1] = {
