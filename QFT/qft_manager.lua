@@ -209,6 +209,14 @@ local tbl3 = {
     ["Molten Radox Polymer"] = {
         card = 18,
         amount = 150000000 --need for everything
+    },
+    ["Molten Polybenzimidazole"] = {
+        card = 2,
+        amount = 1000000000
+    },
+    ["Molten Iridium"] = {
+        card = 6,
+        amount = 1000000000
     }
 }
 
