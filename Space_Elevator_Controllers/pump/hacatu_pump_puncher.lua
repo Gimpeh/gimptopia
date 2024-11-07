@@ -71,7 +71,6 @@ local function punch_pump()
   local min_name = "[disabled]"
   local cur_levels = {}
   local cur_target = 0
-  voice.say("HAS FLUUD?")
   for _, fluid in ipairs(me.getFluidsInNetwork()) do
     local target = target_levels[fluid.label]
     if target ~= nil then
