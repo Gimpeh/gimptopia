@@ -194,10 +194,10 @@ local tbl3 = {
         card = 12,
         amount = 500000000 --need for circuits
     },
-    ["Mutated Living Solder"] = {
+    --[[ ["Mutated Living Solder"] = {
         card = 15,
         amount = 500000000 --need for everything
-    },
+    }, ]]
     ["Sterilized Bio Catalyst Medium"] = {
         card = 15,
         amount = 500000000 --need for circuits
