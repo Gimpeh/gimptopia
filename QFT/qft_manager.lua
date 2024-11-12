@@ -114,14 +114,14 @@ local tbl = {
             }
     },
     [16] = {
-        --[[
+        --
         --rest of the purified waters
             type = "fluid",
             [1] = "Grade 5 Purified Water",
             [2] = "Grade 6 Purified Water",
             [3] = "Grade 7 Purified Water",
             [4] = "Grade 8 Purified Water"
-        ]]
+        
     },
     [17] = {
             type = "mixed",
