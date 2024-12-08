@@ -73,13 +73,27 @@ Now you need to obtain the following;
 * **charger** <-- Of the OpenComputers variety
 * **ME Wireless Access Point**
 * **Machine Controller Cover**
-* **2x Red Alloy Wire**
+* **Activity Detector Cover**
+* **4x Red Alloy Wire**
 * **lever** *or equivelant*
 
 ### Required Placements
 *recommended if we're being completely honest*
 
-The only thing that is not shown in the pictures below is the cover. The cover goes on the top side of the block.
+The only thing that is not shown in the pictures below are the covers. The machine controller cover goes on the top side of the block.
+The activity detector cover goes on the right side (so that it will output to the red alloy wire on the side)
+
+![image](https://github.com/user-attachments/assets/385fad25-9c17-4779-80e1-3553c2795b60)
+![image](https://github.com/user-attachments/assets/8ea9d83d-fd1a-4a81-951f-25ae80999528)
+
+--------------------------
+
+Note the stocking Input Bus In the below Picture.
+
+![image](https://github.com/user-attachments/assets/54330c8b-1f87-4fcf-9a8f-9f4dc07ce682)
+
+
+
 
 The cover's state should be **Enable with Redstone**
 
