@@ -186,35 +186,14 @@ See how the robot is in the output? That means its linked.
 ### Install
 
 ```
-wget https://raw.githubusercontent.com/Gimpeh/gimptopia/main/Space_Elevator_Controllers/pump/hacatu_pump_puncher.lua && install
+wget https://raw.githubusercontent.com/Gimpeh/gimptopia/refs/heads/main/Space_Elevator_Controllers/miner/better_miner.lua && install
 ```
 ### Run
 
-It can now be run with the following 2 commands
+It can now be run
 
------------------------------------
-
-Allow the Robot its Unaleinable Rights 
+-------------------------------
 
 ```
-hacatu_pump_puncher
+better_miner
 ```
-
-----------------------------------
-
-Make it cry because it because it is clearly the lowest class of being
-
-```
-hacatu_pump_puncher stfu
-```
-
---------------------------------
-
-# Important Things
-
-The storage for the level maintained liquids should be sized appropriately
-
-# Trouble Shooting
-
-COMING SOON!
-
