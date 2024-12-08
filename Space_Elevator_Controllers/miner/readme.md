@@ -91,22 +91,15 @@ It can technically be placed in other locations.. but only if you know ***EXACTL
 
 --------------
 
-> [!NOTE]
-> The robot only outputs a signal strength of 1. This means that the color of the red alloy wire is **NOT** going to change while 'on'
-> The redstone state should be discernable from within your pump controller. Is the power button Green? If yes, It's got a signal.
 
---------------
-
-![image](https://github.com/user-attachments/assets/8f2e22dd-7c9e-422c-aec2-ff2dfdcc73a3)
-![image](https://github.com/user-attachments/assets/88ccde17-6a0d-4baa-b100-8f63d04864d6)
 
 Every object's placement is visible in those pictures. 
 
-Besides the chest and the fluid storage tanks, every element contained within the pictures is **required**.
+Every element contained within the pictures is **required**.
 
 ### Required Configurations
 
-The **AE2 Wireless Access Point** needs to be on the ME network you are using to store the fluids.
+The **AE2 Wireless Access Point** needs to be on the ME network you are using to store the level maintained Items.
 
 > [!NOTE]
 > **This is the SAME NETWORK the Robot Needs to get added to via an AE Security Terminal**.
