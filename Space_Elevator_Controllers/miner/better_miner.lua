@@ -82,6 +82,7 @@ local function main()
     local function recheck_cards()
         print("Line 49: Rechecking memory cards")
         for index, card_info in ipairs(memory_cards) do
+            os.sleep(10)
             print("Line 51: Rechecking card with desired resource label: " .. card_info.desired_resource_label)
             local resource_in_stock = me.getItemsInNetwork({label = card_info.desired_resource_label})
             if resource_in_stock and resource_in_stock[1] and resource_in_stock[1].size then
@@ -158,7 +159,7 @@ local function main()
                     print("Line 126: Not all cards are good, breaking loop")
                     break
                 end
-                os.sleep(30)
+                os.sleep(90)
             end
         end
     end
