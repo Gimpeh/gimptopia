@@ -93,9 +93,16 @@ Note the stocking Input Bus In the below Picture.
 ![image](https://github.com/user-attachments/assets/54330c8b-1f87-4fcf-9a8f-9f4dc07ce682)
 
 
+-------------------------
+
+### Covers
+
+![image](https://github.com/user-attachments/assets/a187f189-a21e-49d9-80c5-5c46292d7c13)
+![image](https://github.com/user-attachments/assets/b06f5fba-037f-439c-8f85-18f8207a6d9b)
 
 
-The cover's state should be **Enable with Redstone**
+------------------------
+
 
 It can technically be placed in other locations.. but only if you know ***EXACTLY*** you are doing.
 
@@ -123,7 +130,8 @@ The **AE2 Wireless Access Point** needs to be on the ME network you are using to
 
 ### Required Items
 
-* 1 **Paremetrizer Memory Card (Copy Mode)** Per fluid you want Maintained.
+* 1 **Paremetrizer Memory Card (Copy Mode)** Per Item you want Maintained.
+* 1 **Data Stick** Per Item you want Maintained
 * **OpenOs (Operating System)** <-- This is a green floppy disk.
 * **Anvil** *or equivelant*
 
@@ -156,19 +164,22 @@ See how the robot is in the output? That means its linked.
 
 ### Preparing the Memory Cards
 
-1. Configure the space pumping module
- - Set its Planet Type and Gas Type options to the options required for the current fluid you are setting up. NEI shows them.
-2. Right Click the Space Pumping Module with one of the Memory Cards in hand. It has now copied the Modules Configurations.
+1. Configure the space mining module
+2. Right Click the Space Mining Module with one of the Memory Cards in hand. It has now copied the Modules Configurations.
 3. Look at the sky so that you aren't going to interact with any Blocks. Shift right click the air with the memory card in hand.
    - it is now in paste mode. you should confirm that it sets the modules configurations at this point.
 **THE FOLLOWING NEEDS TO BE EXACT**
 4. Rename the Memory Card in an Anvil.
    - This is a case sensitive exact match to what shows up when you highlight over the relevant gas in NEI
-   - `<Fluid's Exact Label (Display Name)>: <amount to keep in stock>`
-   - `Nitrogen Gas: 1000000000`      <-- example. Note that it is Nitrogen Gas not nitrogen gas and not nitrogen
+   - `<Label of the Item you are trying to keep level maintained>: <amount to keep in stock>`
+   - `Iron Ingot: 1000000000`      <-- example. Note that we are probably autoprocessing ores, so it would be silly to try to keep those stocked.
    - the colon comes directly after the gas name, a space, and then the number.
 5. Store the memory card in the robot.
-6. Repeat for each Fluid you desire.
+6. Configure the stocking input hatch
+7. Left click with the data stick.
+8. Name the data stick the same thing you named the parametizer card.
+9. store the data stick in the robot. 
+10. Repeat for each material you desire.
 
 ## Install and Run
 
