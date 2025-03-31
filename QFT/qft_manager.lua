@@ -108,9 +108,9 @@ local tbl = {
                 [1] = "Biocells"
             },
             fluid = {
-                --[1] = "Mutated Living Solder",
-                --[2] = "Sterilized Bio Catalyst Medium",
-                [1] = "Raw Bio Catalyst Medium"
+                [1] = "Mutated Living Solder",
+                [2] = "Sterilized Bio Catalyst Medium",
+                [3] = "Raw Bio Catalyst Medium"
             }
     },
     [16] = {
@@ -194,10 +194,10 @@ local tbl3 = {
         card = 12,
         amount = 500000000 --need for circuits
     },
-    --[[ ["Mutated Living Solder"] = {
+     ["Mutated Living Solder"] = {
         card = 15,
-        amount = 500000000 --need for everything
-    }, ]]
+        amount = 1000000000 --need for everything
+    }, 
     ["Sterilized Bio Catalyst Medium"] = {
         card = 15,
         amount = 500000000 --need for circuits
