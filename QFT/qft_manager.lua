@@ -72,10 +72,10 @@ local tbl = {
     },
     [10] = {
             type = "fluid",
-            [1] = "Grade 1 Purified Water",
-            [2] = "Grade 2 Purified Water",
-            [3] = "Grade 3 Purified Water",
-            [4] = "Grade 4 Purified Water"
+            [1] = "Filtered Water (Grade 1)",
+            [2] = "Ozonated Water (Grade 2)",
+            [3] = "Flocculated Water (Grade 3)",
+            [4] = "pH Neutralized Water (Grade 4)"
     },
     [11] = {
             type = "fluid",
@@ -117,10 +117,10 @@ local tbl = {
         --
         --rest of the purified waters
             type = "fluid",
-            [1] = "Grade 5 Purified Water",
-            [2] = "Grade 6 Purified Water",
-            [3] = "Grade 7 Purified Water",
-            [4] = "Grade 8 Purified Water"
+            [1] = "Extreme-Temperature Treated Water (Grade 5)",
+            [2] = "Ultraviolet Treated Electrically Neutral Water (Grade 6)",
+            [3] = "Degassed Decontaminant-Free Water (Grade 7)",
+            [4] = "Subatomically Perfect Water (Grade 8)"
         
     },
     [17] = {
