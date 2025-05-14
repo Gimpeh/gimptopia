@@ -174,15 +174,15 @@ local tbl2 = {
     },
     ["Inert Naquadah Dust"] = {
         card = 13,
-        amount = 200 -- don't need more, stocking molten
+        amount = 2000 -- don't need more, stocking molten
     },
     ["Inert Enriched Naquadah Dust"] = {
         card = 14,
-        amount = 200 -- don't need more, stocking molten
+        amount = 2000 -- don't need more, stocking molten
     },
     ["Inert Naquadria Dust"] = {
         card = 20,
-        amount = 200 -- don't need more, stocking molten
+        amount = 2000 -- don't need more, stocking molten
     },
     ["Black Body Naquadria Supersolid"] = {
         card = 20,
