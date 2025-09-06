@@ -11,6 +11,7 @@ Its job is to monitor AE2 system stock levels of both fluids and solids.
   the robot equips and uses the correct “data stick/card” (kept in its inventory).
 - The card triggers the Quantum Field Treader (QFT) or equivalent system to generate more of that resource.
 - The robot then waits until the AE system confirms the resource is restocked.
+- Currently only optimized for GTNH Version 2.6.X
 
 📌 Table Breakdown
 tbl (the main table, “tb1”)
